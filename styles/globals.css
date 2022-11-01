@@ -1,9 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+@layer base {
+  body {
+    @apply font-body
+  }
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #fff;
+  background-color: #0a192f;
 }
 
 a {
@@ -15,12 +27,33 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  .nav-item {
+    @apply uppercase text-[#ffff] hover:text-highlight cursor-pointer tracking-wider transition duration-200 ease-out text-xs sm:text-sm;
   }
-  body {
-    color: white;
-    background: black;
+  .social-icons {
+    @apply text-[#ffff] cursor-pointer hover:text-highlight hover:scale-105 w-[20px] h-[20px] transition transform duration-300 ease-out;
   }
+}
+
+/* Scrollbar styles */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #495670 #0a192f;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #495670;
+  border: 3px solid #0a192f;
+  border-radius: 10px;
 }
