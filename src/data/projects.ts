@@ -57,7 +57,7 @@ const projects: Project[] = [
     title: "Amazon Clone",
     technologies: ["Next.js", "fakestore API", "Tailwind Css"],
     gitLink: "https://github.com/xitiz007/amazon-clone",
-    externalLink: "https://amazon-clone-fs2839q44-xitiz007.vercel.app/",
+    externalLink: "https://heroic-entremet-c2d677.netlify.app/",
     image: "amazon-clone.png",
     description:
       "Amazon clone with fake products from fakestore api, google authentication etc",
