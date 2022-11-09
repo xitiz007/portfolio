@@ -9,6 +9,7 @@ const technologies: string[] = [
   "Express.js",
   "GraphQL / Rest API",
   "MongoDB",
+  "PostgreSQL",
   "Tailwind CSS",
   "Docker",
 ];
