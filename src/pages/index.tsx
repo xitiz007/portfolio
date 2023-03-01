@@ -22,12 +22,12 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="kshitiz baniya, full-stack developer, javascript"
+          content="kshitiz baniya, developer, full-stack developer, javascript"
         />
         <meta name="author" content="Kshitiz Baniya" />
         <meta
           name="image"
-          content={`https://www.devkshitiz.me/images/my-page.png`}
+          content={`https://www.kshitizbaniya.tech/images/my-page.png`}
         />
         <meta property="og:title" content="Kshitiz Baniya" />
         <meta
@@ -36,9 +36,9 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content={`https://www.devkshitiz.me/images/my-page.png`}
+          content={`https://www.kshitizbaniya.tech/images/my-page.png`}
         />
-        <meta property="og:url" content="https://www.devkshitiz.me/" />
+        <meta property="og:url" content="https://www.kshitizbaniya.tech/" />
         <meta property="og:type" content="website" />
       </Head>
       <Header />
