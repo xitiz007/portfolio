@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Email from "../components/Email";
@@ -7,8 +8,12 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Social from "../components/Social";
 import Works from "../components/Works";
+import ReactGA from "react-ga";
 
 export default function Home() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <div id="top">
       <Head>
